@@ -23,36 +23,12 @@ ggplot(data2, aes(x=Description, y=count, fill=p.adjust)) +
   coord_flip()
 
 
-data<-read.csv("43gene.venn.csv",row.names=1,header=T)
-
-# Groups
-colors <- numeric(43)
-colors[quarter == "1"] <- "red"
-colors[quarter == "2"] <- "blue"
-colors[quarter == "3"] <- "green"
-colors[quarter == "4"] <- "orange"
-
-dotchart(data$avg_log2FC, labels = data$gene, pch = 19, cex =.7, pt.cex = data$pct.3) 
-
-f <- ggplot(data, aes(avg_log2FC, gene))+ geom_point(aes(size = pct.3)) + geom_point(aes(color=p_val_adj)) 
+data<-read.csv("38_genes.venn.csv",header=T)
+#newdata<-subset(data, data$p_val_adj < 0.05)
+#data<-newdata
+data2<-data[order(data$avg_log2FC),]
+dotchart(data2$avg_log2FC, labels = data$gene, pch = 19, cex =.7, pt.cex = data$pct.3) 
+genelist<-data2$gene
+data2$gene<-factor(data2$gene,levels=data2$gene)
+f <- ggplot(data2, aes(avg_log2FC, gene))+ geom_point(aes(size = pct.3)) + geom_point(aes(color=p_val_adj)) 
 f + scale_colour_gradient(low = "red", high = "green")
-
-ggplot(data, aes(x=avg_log2FC, y=gene)) +
-  geom_dotplot()
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-range01 <- function(x){(x-min(x))/(max(x)-min(x))}
-ggplot(data, aes(x=avg_log2FC, y=gene, color=p_val_adj)) + 
-  geom_dotplot(aes(x=avg_log2FC, y=gene, color=p_val_adj),dotsize=range01(data$pct.3))
-
-dotchart(data$avg_log2FC, data$gene, color=data$p_val_adj,cex=.7)
