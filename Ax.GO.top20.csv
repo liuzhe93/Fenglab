@@ -1,0 +1,21 @@
+Description,GeneRatio,count,BgRatio,pvalue,p.adjust
+regulation of angiogenesis,19/180,19,381/23210,1.54E-10,2.79E-07
+response to wounding,17/180,17,496/23210,3.53E-07,7.56E-05
+regulation of ossification,15/180,15,233/23210,4.42E-10,3.55E-07
+gliogenesis,15/180,15,323/23210,3.69E-08,1.19E-05
+embryonic organ development,15/180,15,493/23210,7.51E-06,0.000560902
+renal system development,15/180,15,302/23210,1.51E-08,6.45E-06
+regulation of mitotic cell cycle,14/180,14,493/23210,3.26E-05,0.0014352
+regulation of actin filament-based process,14/180,14,393/23210,2.54E-06,0.000272053
+protein kinase B signaling,14/180,14,186/23210,2.21E-10,2.79E-07
+epithelial tube morphogenesis,14/180,14,380/23210,1.72E-06,0.000202867
+learning or memory,13/180,13,292/23210,4.99E-07,9.12E-05
+Wnt signaling pathway,13/180,13,428/23210,3.15E-05,0.001427724
+cell-substrate adhesion,13/180,13,339/23210,2.63E-06,0.000272053
+negative regulation of phosphorylation,13/180,13,452/23210,5.51E-05,0.001967142
+muscle tissue development,13/180,13,472/23210,8.53E-05,0.002404169
+regulation of neurotransmitter levels,12/180,12,373/23210,3.68E-05,0.001573543
+glial cell differentiation,12/180,12,239/23210,3.90E-07,7.83E-05
+forebrain development,12/180,12,386/23210,5.12E-05,0.001946135
+negative regulation of neurogenesis,12/180,12,337/23210,1.36E-05,0.000793221
+morphogenesis of a branching structure,11/180,11,240/23210,2.92E-06,0.000284641
